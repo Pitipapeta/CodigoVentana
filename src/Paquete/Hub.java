@@ -1,3 +1,7 @@
+package Paquete;
+
+import Paquete.Contenedor;
+
 public class Hub {
 
     Contenedor[][] puerto = new Contenedor[10][12];

@@ -1,3 +1,7 @@
+package Paquete;
+
+import Paquete.Contenedor;
+import Paquete.Hub;
 
 public class Puerto {
 

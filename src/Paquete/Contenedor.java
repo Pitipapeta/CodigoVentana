@@ -1,3 +1,5 @@
+package Paquete;
+
 public class Contenedor {
     private final int id;
     private int peso, prio;
@@ -81,7 +83,7 @@ public class Contenedor {
 
     @Override
     public String toString() {
-        return "Contenedor: " +
+        return "Paquete.Contenedor: " +
                 "ID:" + id + "\n" +
                 ", Peso: " + peso + "\n" +
                 ", Prioridad: " + prio + "\n" +
