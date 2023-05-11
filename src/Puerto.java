@@ -1,7 +1,9 @@
 
 public class Puerto {
+
     Hub[] hubs;
     Contenedor contenedor;
+    Contenedor[][] puerto = new Contenedor[10][12];
 
     public Puerto(){
         this.hubs = new Hub[3];
@@ -20,6 +22,18 @@ public class Puerto {
             }
         }
         return false;
+    }
+
+    public String contenedorBase(int prio){
+        String plano = new String();
+        for (int i = 0; i < puerto.length; i++) {
+            for (int j = 0; j < puerto[i].length; j++) {
+                if(i == (puerto.length -1) && prio == contenedor.getPrio()){
+                    plano += contenedor.mostrarDatos() + "\n";
+                }else return "No se ha encontrado ningun contenedor";
+            }
+        }
+        return plano;
     }
 
     public boolean Desapilar(int nHub, int colum){
@@ -42,8 +56,6 @@ public class Puerto {
         return plano;
     }
 
-    public String contenedorBase(int prio){
-        return contenedor.mostrarDatos();
-    }
+
 }
 
