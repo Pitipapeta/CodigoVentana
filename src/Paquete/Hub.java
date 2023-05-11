@@ -77,7 +77,7 @@ public class Hub {
     public int npais(String procedencia) {
         int s = 0;
         for (int i = 0; i < puerto.length; i++) {
-            for (int j = 0; j < puerto[0].length; j++) {
+            for (int j = 0; j < puerto[i].length; j++) {
                 if (procedencia.equals(puerto[i][j].getProcedencia())) ++s;
             }
         }
